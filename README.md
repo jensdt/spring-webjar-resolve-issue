@@ -15,3 +15,9 @@ b) Alternatively, navigate to http://localhost:8080/webjar-resource-resolver-exa
 If you undeploy the first WAR and restart the server with only the second WAR deployed, it will start working.
 
 The issue only occurs when both projects are deployed (and the last one deployed is impacted, the first one is fine).
+
+Note that this from the Spring documentation:
+
+"If you use JBoss, you need to declare the webjars-locator-jboss-vfs dependency instead of the webjars-locator-core. Otherwise, all Webjars resolve as a 404."
+
+Is no longer relevant for WebJars and does nothing to impact this issue.
